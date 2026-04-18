@@ -68,7 +68,7 @@ Then make a series of transformations:
 
 ## How much pays the top 10 data skills?
 
-![image.png](attachment:7a665575-5a9e-4fba-9cf2-c99d01d3f7c6:9ec1ca5c-f86b-410e-870d-630eae2447c0.png)
+![T10_Salary](resources/HowMuchPaysT10DataSkills.png)
 
 - 🔨**Tools**: Power Pivot, Pivot tables, Pivot Graphs, measures, DAX.
 - Establish Create explicit measures for “Median Salary” y “Count Skills.
