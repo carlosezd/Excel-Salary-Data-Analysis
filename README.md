@@ -1,4 +1,7 @@
 # Excel-Salary-Data-Analysis
+
+![Analysis Screenshot](resources/01_powerquery.png)
+
 # Introduction 🗣️
 
 This analysis 📊 was created with the objetive of finding new interesting insights about the salary 💵 offered or skills 🥷 needed for data jobs posted in 2023. The data originated from the Excel Data Analysis Course made by Luke Barrouse. 
@@ -30,11 +33,12 @@ The analysis begins with the ETL process and ends with the creation of the model
 
 The dataset is loaded in Power Query. 
 
-![image.png](attachment:7805e9a7-a076-4010-adb4-659d2e04355f:image.png)
+![Power_Query_Statssumary](resources/02_powerquery_statssumary.png)
+
 
 Preliminary check of each column with statistical summary.
 
-![image.png](attachment:89026c73-789d-42a4-9733-85059a415fe6:image.png)
+![job_skills_before](resources/03_job_skill_before.png)
 
 Then make a series of transformations:
 
@@ -44,9 +48,8 @@ Then make a series of transformations:
 - Filter the data to only rows with salary rate type of “Year”.
 - Cleaning of the “job_skills” column via the creation of a new table “job_skills”. For this new table, tools like “replace value”, “Format Text” and “Unpivot Column
 
-![image.png](attachment:8c648ea4-47c9-4e55-b71d-42393467ac80:image.png)
+![job_skill_after](resources/04_job_skill_after.png)
 
-![image.png](attachment:924d312a-57be-4d47-b034-f880288768a8:image.png)
 
 # Analysis 🔎
 
@@ -55,7 +58,7 @@ Then make a series of transformations:
 
 ## Does having more skills equals to earning a higher salary?
 
-![05_numberskillspayed.png](attachment:057849f1-c4a2-48d9-b421-5cf9aab9545b:1c23db10-7f41-453f-9886-04cab922c5b3.png)
+![numberskillspayed](resources/GIF_HowMuchPaysSkills.gif)
 
 - 🔨**Tools**: Power Pivot, Pivot tables, Excel Graphs, measures, DAX.
 - Create the measure Job Count-Skill Rate that divides “Job Counts” and “Skill Counts”.
@@ -75,7 +78,7 @@ Then make a series of transformations:
 
 ## **What’s the salary for data jobs in different regions?**
 
-![image.png](attachment:a6f184a6-1e00-485f-b3f7-ade61c1c9d7b:1af4ce4c-a944-4adf-953a-9a396ba3c219.png)
+![salary_by_regions](resources/Salary_by_regions.gif)
 
 - 🔨**Tools**: Power Pivot, Pivot tables, Pivot Graphs, measures, DAX.
 - Create the mesuares “US Median salary” and “No US Median Salary”. Both measures were created to be compared. The first one is static and the second one change by the country filter.
